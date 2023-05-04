@@ -10,45 +10,58 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="main">
     <form>
         <h1>Создайте свой аккаунт</h1>
-        <div class="container">
+
+        <div class="container contacts">
             <label>Имя</label>
             <input type="text" placeholder="Имя..." class="border">
         </div>
-        <div class="container">
+
+        <div class="container contacts">
             <label>Email</label>
             <input type="email" placeholder="Email..." class="border">
         </div>
-        <div class="container">
+
+        <div class="container contacts">
             <label>Пароль</label>
             <input type="password" placeholder="Пароль..." class="border">
         </div>
+
         <div class="container">
             <label>Какой курс вас интересует?</label>
             <select>
-                <option>HTML/CSS</option>
-                <option>JavaScript</option>
-                <option>React</option>
-                <option>Angular</option>
-                <option>Node</option>
+                <option class="select">HTML/CSS</option>
+                <option class="select">JavaScript</option>
+                <option class="select">React</option>
+                <option class="select">Angular</option>
+                <option class="select">Node</option>
             </select>
         </div>
-        <div class="container">
+
+        <div class="container level">
             <label>Ваш уровень программирования</label>
-            <input type="radio" name="level">
-            <label>Новичок</label>
-            <input type="radio" name="level">
-            <label>1-2 года</label>
-            <input type="radio" name="level">
-            <label>3 года и выше</label>
+            <div class="first-input">
+                <input type="radio" name="level">
+                <label>Новичок</label>
+            </div>
+            <div>
+                <input type="radio" name="level">
+                <label>1-2 года</label>
+            </div>
+            <div>
+                <input type="radio" name="level">
+                <label>3 года и выше</label>
+            </div>
         </div>
-        <div class="container">
-            <input type="checkbox">
-            <label>Ставя здесь галочку, вы автоматичнски попадаете в нашу рассылку.</label>
+
+        <div class="container" id="checkbox">
+                <input type="checkbox">
+                <label>Ставя здесь галочку, вы автоматичнски попадаете в нашу рассылку.</label>
         </div>
-        <div class="container">
+
+        <div class="container button">
             <button class="btn">Вперед</button>
         </div>
     </form>
